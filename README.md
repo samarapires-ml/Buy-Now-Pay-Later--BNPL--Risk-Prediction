@@ -55,12 +55,7 @@ This class imbalance motivates careful evaluation and threshold tuning.
 ![Correlation Heatmap](images/correlation_heatmap.png)
 
 ### 🔹 Feature Distributions
-
-Numeric Feature Distributions:
 ![Numeric Feature Distributions](images/numeric_feature_distributions.png)
-
-Categorical Feature Distributions:
-![Categorical Feature Distributions](images/categorical_feature_distributions.png)
 
 ---
 
