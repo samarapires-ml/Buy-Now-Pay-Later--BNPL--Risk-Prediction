@@ -10,7 +10,46 @@ This project focuses on identifying customers who are likely to **default or pay
 By combining these approaches, we not only predict risk but also quantify **uncertainty**, which is critical in financial applications.
 
 ---
+## 📁 Project Structure
 
+### 📂 Data Folder
+
+| File / Folder | Description |
+|--------------|-------------|
+| `raw/raw_data.csv` | Original BNPL dataset downloaded from Kaggle |
+| `cleaned/clean_full_data.csv` | Cleaned and preprocessed dataset used for modeling |
+| `cleaned/clean_train_data.csv` | Cleaned and preprocessed dataset used for training dataset |
+| `cleaned/clean_test_data.csv` | Cleaned and preprocessed dataset used for test dataset |
+| `featured_engineered/X_train.csv` | Training feature sets |
+| `featured_engineered/X_test.csv` | Testing feature sets |
+| `featured_engineered/y_train.csv`| Training target variables |
+| `featured_engineered/y_test.csv` | Testing target variables |
+
+This folder contains all datasets used throughout the project, from raw input to fully processed data ready for modeling.
+
+---
+
+### 📓 Notebooks Folder
+
+| Notebook | Description |
+|----------|-------------|
+| `01_Data_Preprocessing.ipynb` | Data cleaning, missing value handling, encoding, and scaling |
+| `02_Exploratory_Data_Analysis.ipynb` | Visualizations and insights about feature distributions and relationships |
+| `03_Feature_Engineering.ipynb` | Feature selection using LASSO and transformation steps |
+| `04_BNPL_Bayesian_Logistic_Regression_Analysis.ipynb` | Bayesian logistic regression using PyMC with NUTS (HMC sampling) |
+
+---
+
+## ⚠️ Note on Notebook Rendering
+
+The notebook `04_BNPL_Bayesian_Logistic_Regression_Analysis.ipynb` may show an **"Invalid Notebook"** error on GitHub due to widget metadata issues:
+
+> *"the 'state' key is missing from 'metadata.widgets'"*
+
+Additionally, this notebook uses **Hamiltonian Monte Carlo (HMC)** via the **NUTS sampler**, which is computationally intensive.  
+Because of this, GitHub may fail to render the preview properly.
+
+👉 To view it correctly, please run the notebook locally in Jupyter or in Google Colab.
 ## 📂 Dataset
 
 | Attribute | Description |
@@ -192,7 +231,7 @@ Overall, while the classical model provides strong interpretability and competit
 
 ---
 
-## 👥 Contributors
+## ✏️ Contributors
 
 - 👤 [Saung Hnin Phyu](https://github.com/Saung210)
 - 👤 [Samara Pires](https://github.com/samarapires-ml)
