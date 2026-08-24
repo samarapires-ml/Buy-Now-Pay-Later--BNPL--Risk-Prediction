@@ -1,5 +1,12 @@
 # Buy Now Pay Later (BNPL) Risk Prediction 
 
+## Project Highlights
+
+- Built an end-to-end **BNPL repayment risk prediction pipeline** using classical and Bayesian machine learning
+- Applied **PyMC + NUTS** to quantify uncertainty in customer risk estimates
+- Used **LASSO-based feature selection** and interpretable coefficient analysis to identify key risk drivers
+- Compared classical Logistic Regression with Bayesian Logistic Regression across predictive performance and interpretability
+
 ## 📝 Project Overview
 
 This project focuses on identifying customers who are likely to **default or pay late** in Buy Now Pay Later (BNPL) transactions. The goal is to support **better decision-making** using both:
@@ -201,7 +208,7 @@ It helps verify convergence and visualize uncertainty in the Bayesian logistic r
 | **0** | 0.79 | 0.99 | 0.88 | 7680 |
 | **1** | 0.75 | 0.11 | 0.19 | 2320 |
 
-The model favors recall but suffers from false positives.
+The model performs strongly on the majority class but has low recall for late-payment/default cases, highlighting the difficulty of identifying the minority risk class.
 
 ### 📊 Confusion Matrix
 
